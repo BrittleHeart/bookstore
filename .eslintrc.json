@@ -1,0 +1,29 @@
+{
+  "parser": "typescript-eslint",
+  "env": {
+    "node": true,
+    "web": false,
+    "es6": true,
+    "jest/globals": true
+  },
+  "plugins": [
+    "typescript-eslint",
+    "prettier",
+    "jest"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2022
+  },
+  "rules": {
+    "semi": ["warning", "alaways"],
+    "quotes": ["error", "single"],
+    "no-unused-vars": ["error", "always"],
+    "no-unreachable": ["error", "always"],
+    "no-unused-expressions": ["warning", "always"],
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
+  }
+}

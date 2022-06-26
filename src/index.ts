@@ -6,6 +6,8 @@ export default class Application {
   }
 }
 
+const app = '1';
+
 async function bootstrap() {
   const app = new Application();
 
