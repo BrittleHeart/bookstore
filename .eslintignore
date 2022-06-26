@@ -1,0 +1,3 @@
+jest.config.*
+webpack.config.*
+.history/
