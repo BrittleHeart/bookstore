@@ -1,13 +1,13 @@
 {
-  "parser": "typescript-eslint",
+  "parser": "@typescript-eslint/parser",
   "env": {
     "node": true,
-    "web": false,
     "es6": true,
     "jest/globals": true
   },
+  "extends": ["plugin:@typescript-eslint/recommended"],
   "plugins": [
-    "typescript-eslint",
+    "@typescript-eslint",
     "prettier",
     "jest"
   ],
@@ -15,11 +15,11 @@
     "ecmaVersion": 2022
   },
   "rules": {
-    "semi": ["warning", "alaways"],
+    "semi": ["warn", "never"],
     "quotes": ["error", "single"],
-    "no-unused-vars": ["error", "always"],
-    "no-unreachable": ["error", "always"],
-    "no-unused-expressions": ["warning", "always"],
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+    "no-unreachable": ["error"],
+    "no-unused-expressions": ["warn",  {"allowShortCircuit": false, "allowTernary": false }],
     "jest/no-disabled-tests": "warn",
     "jest/no-focused-tests": "error",
     "jest/no-identical-title": "error",
