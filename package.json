@@ -1,0 +1,38 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:dev": "NODE_ENV=development webpack --mode development --watch",
+    "compile:prod": "NODE_ENV=production webpack --mode production",
+    "test:watch": "NODE_ENV=testing jest --watch",
+    "test": "NODE_ENV=testing jest",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrittleHeart/bookstore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrittleHeart/bookstore/issues"
+  },
+  "homepage": "https://github.com/BrittleHeart/bookstore#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.3",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-node-externals": "^2.5.3",
+    "husky": "^8.0.1",
+    "jest": "^28.1.1",
+    "ts-jest": "^28.0.5",
+    "ts-loader": "^9.3.1",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
